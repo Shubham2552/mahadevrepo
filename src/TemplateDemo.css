@@ -1,0 +1,20 @@
+/* Ensures the Menubar is fixed at the top */
+.menubar {
+  position: fixed; /* Fixes the Menubar to the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  background-color: white; /* White background for Menubar */
+}
+
+/* Main content area should have padding at the top to avoid overlap with Menubar */
+.layout {
+  padding-top: 3.5rem; /* Adjust based on Menubar height to avoid overlap */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Optionally style main content */
+main {
+  padding: 1rem;
+}
